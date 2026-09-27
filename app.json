@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Riyadh Service Marketplace",
+    "slug": "riyadh-service-marketplace",
+    "scheme": "riyadhservice",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": ["ios", "android"],
+    "assetBundlePatterns": ["**/*"],
+    "plugins": ["expo-router"],
+    "splash": {
+      "backgroundColor": "#F7F9FC",
+      "resizeMode": "contain"
+    }
+  }
+}
