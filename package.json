@@ -1,0 +1,34 @@
+{
+  "name": "riyadh-service-marketplace",
+  "version": "1.0.0",
+  "description": "Mobile app for service marketplace in Riyadh",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.0",
+    "react-native-maps": "^1.4.0",
+    "react-native-geolocation-service": "^5.3.1",
+    "axios": "^1.4.0",
+    "@react-navigation/native": "^6.1.0",
+    "@react-navigation/bottom-tabs": "^6.5.0",
+    "@react-navigation/stack": "^6.3.0",
+    "react-native-gesture-handler": "^2.12.0",
+    "react-native-reanimated": "^3.2.0",
+    "react-native-screens": "^3.20.0",
+    "zustand": "^4.3.9",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "@testing-library/react-native": "^12.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-react-app": "^7.0.1"
+  }
+}
