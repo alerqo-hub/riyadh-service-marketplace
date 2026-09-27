@@ -3,6 +3,23 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export type UserRole = 'customer' | 'provider';
 
+export interface VerificationDocument {
+  id: string;
+  type: 'id' | 'license' | 'certificate';
+  uri: string;
+  fileName: string;
+  uploadedAt: string;
+}
+
+export interface VerificationStatus {
+  status: 'pending' | 'under_review' | 'verified' | 'rejected';
+  identityNumber: string;
+  documents: VerificationDocument[];
+  submittedAt: string | null;
+  reviewedAt?: string | null;
+  rejectionReason?: string;
+}
+
 export interface User {
   id: string;
   name: string;
@@ -16,6 +33,7 @@ export interface User {
   yearsExperience?: number;
   bio?: string;
   bankAccount?: string;
+  verificationStatus?: VerificationStatus;
   createdAt: string;
 }
 
